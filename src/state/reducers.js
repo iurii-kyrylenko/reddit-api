@@ -51,7 +51,7 @@ const postsBySubreddit = (state = {}, action) => {
     case REQUEST_POSTS:
     case RECEIVE_POSTS:
       return {
-        ... state,
+        ...state,
         [action.subreddit]: posts(state[action.subreddit], action)
       }
     default:
